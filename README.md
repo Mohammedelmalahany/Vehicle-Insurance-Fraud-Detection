@@ -7,7 +7,7 @@ This project simulates a production-level industry workflow, encompassing everyt
 
 ---
 
-## 🛠️ Technology Stack & Tools
+##  Technology Stack & Tools
 **1. Data Science & Machine Learning:**
 * **Python:** Core programming language.
 * **Pandas & NumPy:** Data manipulation, cleaning, and numerical computations.
@@ -27,7 +27,7 @@ This project simulates a production-level industry workflow, encompassing everyt
 
 ---
 
-## 🔄 The Machine Learning Pipeline (Step-by-Step)
+##  The Machine Learning Pipeline (Step-by-Step)
 
 ### Step 1: Data Acquisition & EDA (Exploratory Data Analysis)
 * **Data Source:** A real-world tabular dataset from Kaggle containing policy details, incident telemetry, and demographic data.
@@ -56,7 +56,7 @@ Since accuracy is a misleading metric for imbalanced datasets, models were stric
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 1. **The Engine (Backend):** A `FastAPI` server (`API.py`) loads the `.pkl` model into memory. It exposes a `/predict` POST endpoint that receives JSON payloads containing 30 claim features, processes them, and returns a fraud probability score.
 2. **The Dashboard (Frontend):** A `Streamlit` app (`app.py`) provides a premium, dark-themed user interface. It collects user inputs via dropdowns and sliders, constructs the JSON payload, calls the FastAPI backend, and visualizes the returned risk score using an interactive Plotly gauge.
